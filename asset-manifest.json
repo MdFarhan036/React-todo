@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/React-todo/static/css/main.05678a86.css",
+    "main.js": "/React-todo/static/js/main.452fd8c9.js",
+    "index.html": "/React-todo/index.html",
+    "static/media/bxs-user.svg": "/React-todo/static/media/bxs-user.749bb1826c0746b5c7b2d0108106fb4b.svg",
+    "main.05678a86.css.map": "/React-todo/static/css/main.05678a86.css.map",
+    "main.452fd8c9.js.map": "/React-todo/static/js/main.452fd8c9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.05678a86.css",
+    "static/js/main.452fd8c9.js"
+  ]
+}
