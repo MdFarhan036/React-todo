@@ -1,0 +1,392 @@
+/* Googlefont Poppins CDN Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.sidebar {
+
+  padding-top: 40px;
+  position: fixed;
+  height: 100%;
+  width: 60px;
+  background: #0A2558;
+  overflow: hidden;
+  transition: all 0.5s linear;
+}
+
+.sidebar:hover {
+  width: 240px;
+  transition: 0.5s;
+}
+
+.sidebar.active {
+  width: 60px;
+}
+
+.sidebar .logo-details {
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar .logo-details i {
+  font-size: 28px;
+  font-weight: 500;
+  color: #fff;
+  min-width: 60px;
+  text-align: center
+}
+
+.sidebar .logo-details .logo_name {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.sidebar .nav-links {
+  margin-top: 10px;
+}
+
+.sidebar .nav-links li {
+  position: relative;
+  list-style: none;
+  height: 50px;
+}
+
+.sidebar .nav-links li a {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+
+.sidebar .nav-links li a.active {
+  background: #081D45;
+}
+
+.sidebar .nav-links li a:hover {
+  background: #081D45;
+}
+
+.sidebar .nav-links li i {
+  min-width: 60px;
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+}
+
+.sidebar .nav-links li a .links_name {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.sidebar .nav-links .log_out {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.home-section {
+
+  position: relative;
+  background: #f5f5f5;
+  min-height: 100vh;
+  width: calc(100% - 240px);
+  left: 240px;
+  transition: all 0.5s ease;
+}
+
+.sidebar.active~.home-section {
+  width: calc(100% - 60px);
+  left: 60px;
+}
+
+nav {
+
+  margin-left: 60px;
+  display: flex;
+  justify-content: space-between;
+  /* height: 80px; */
+  background: #fff;
+  /* display: flex; */
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  /* left: 240px; */
+  z-index: 100;
+  padding: 0 15px;
+  justify-content: space-between;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s linear;
+}
+
+nav .sidebar-button {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+nav .sidebar-button i {
+  font-size: 35px;
+  margin-right: 10px;
+}
+
+.sidebar-add {
+  background: #2697FF;
+  width: 200px;
+  padding: 10px;
+  margin-left: 50px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 30px;
+  border-right: 2px solid rgba(24, 20, 20, 0.3);
+
+}
+
+nav .search-box {
+  position: relative;
+  height: 50px;
+  max-width: 350px;
+  width: 100%;
+  margin: 0 20px;
+}
+
+nav .search-box input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  background: #F5F6FA;
+  border: 2px solid #EFEEF1;
+  border-radius: 6px;
+  font-size: 18px;
+  padding: 0 15px;
+}
+
+nav .search-box .bx-search {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  background: #2697FF;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 4px;
+  line-height: 40px;
+  text-align: center;
+  color: #fff;
+  font-size: 22px;
+  transition: all 0.4 ease;
+}
+
+nav .profile-details {
+  display: flex;
+  align-items: center;
+  background: #F5F6FA;
+  border: 2px solid #EFEEF1;
+  border-radius: 6px;
+  height: 50px;
+  min-width: 190px;
+  padding: 0 15px 0 2px;
+}
+
+nav .profile-details img {
+  height: 40px;
+  width: 40px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+nav .profile-details .admin_name {
+  font-size: 15px;
+  font-weight: 500;
+  color: #333;
+  margin: 0 10px;
+  white-space: nowrap;
+}
+
+nav .profile-details i {
+  font-size: 25px;
+  color: #333;
+}
+
+.home-header {
+  display: flex;
+  padding: 50px 80px;
+
+}
+
+.home-header img {
+  width: 300px;
+  margin: 20px 20px;
+  height: 100px;
+}
+
+.home-header h2 {
+  padding: 30px 50px;
+  text-align: center;
+  margin: 20px 20px;
+  font-size: 30px;
+  font-weight: 600;
+
+  border-left: 4px solid rgba(9, 7, 7, 0.3);
+}
+
+
+/* Modal styles */
+.modal {
+  bottom: 100px;
+  right: 200px;
+  width: 450px;
+  height: 500px;
+  position: absolute;
+  border-radius: 10px;
+  background-color: #c4e1e7;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal .modal-header,
+.modal .modal-body,
+.modal .modal-footer {
+  padding: 20px 30px;
+}
+
+.modal .modal-content {
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+
+.modal .modal-title {
+  display: inline-block;
+}
+
+.form-group {
+  outline: none;
+  box-shadow: none;
+}
+
+.form-control,
+.form-radio {
+  border-radius: 2px;
+  outline: none;
+  margin: 10px 0 20px 0;
+  box-shadow: none;
+  border-color: #dddddd;
+}
+
+.modal .btn {
+  border-radius: 2px;
+  min-width: 100px;
+}
+
+label {
+  margin-bottom: 20px;
+  font-size: 15px;
+
+
+  font-weight: normal;
+}
+
+.home-container {
+
+  background: #276c91;
+}
+
+.home-container .card-box {
+  display: flex;
+  margin: 0 100px;
+}
+
+.home-container .card-box .card {
+  border: 5px solid #fff;
+  margin: 0 20px;
+  border-radius: 20px;
+  padding: 20px;
+  background: #e9f0f7;
+  width: 31%;
+  height: 68vh;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.home-container .card-box .card h3 {
+  font-size: 22px;
+  border-bottom: 2px black;
+}
+
+.todo_card {
+  width: 100%;
+  height: auto;
+  color: #276c91;
+  background: #fff;
+  padding: 2px 5px;
+  border-radius: 5px;
+  margin-top: 3px;
+  margin-right: 6px;
+}
+
+.card_text {
+  margin: auto;
+}
+
+.icon-check-todo {
+  background: #276c91;
+  color: #fff;
+  padding: 5px;
+  font-size: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.icon-trash-todo {
+  background: red;
+  color: #fff;
+  padding: 5px;
+  font-size: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.progress_card {
+  width: 100%;
+  height: auto;
+  color: #000000;
+  background: yellow;
+  padding: 2px 5px;
+  border-radius: 5px;
+  margin-top: 3px;
+}
+
+.icon-progress-todo {
+  background: #fff;
+  color: green;
+  padding: 5px;
+  font-size: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.completed_card {
+  width: 100%;
+  height: auto;
+  color: #fff;
+  background: #00b09b;
+  padding: 10px 5px;
+  border-radius: 5px;
+  margin-top: 3px;
+}
